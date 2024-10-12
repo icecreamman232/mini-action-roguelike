@@ -95,6 +95,7 @@ GameObject:
   - component: {fileID: 2310840766923651246}
   - component: {fileID: 7358172305689880438}
   - component: {fileID: 2483600196351714576}
+  - component: {fileID: 4471612469330852469}
   m_Layer: 9
   m_Name: StartingBullet
   m_TagString: Bullet/Player
@@ -181,3 +182,21 @@ MonoBehaviour:
   m_obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
+--- !u!114 &4471612469330852469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5431685210626045418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c048c1057706054b8ae93704e3d92cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_targetLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  m_minDamage: 5
+  m_maxDamage: 10
+  m_invulnerableDuration: 0.3

@@ -28,23 +28,27 @@ namespace SGGames.Scripts.Character
             
             if (Input.GetKey(KeyCode.A))
             {
+                if (m_characterController.CollisionInfo.LeftCollide) return;
                 m_moveDirection.x = -1;
                 m_isFlipped = true;
             }
 
             if (Input.GetKey(KeyCode.D))
             {
+                if (m_characterController.CollisionInfo.RightCollide) return;
                 m_moveDirection.x = 1;
                 m_isFlipped = false;
             }
 
             if (Input.GetKey(KeyCode.W))
             {
+                if (m_characterController.CollisionInfo.TopCollide) return;
                 m_moveDirection.y = 1;
             }
 
             if (Input.GetKey(KeyCode.S))
             {
+                if (m_characterController.CollisionInfo.BottomCollide) return;
                 m_moveDirection.y = -1;
             }
             

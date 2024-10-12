@@ -1,3 +1,5 @@
+using System;
+using SGGames.Scripts.Managers;
 using UnityEngine;
 
 namespace SGGames.Scripts.Weapons
@@ -20,6 +22,14 @@ namespace SGGames.Scripts.Weapons
             m_isFired = true;
             m_travelledDistance = 0;
             m_startPosition = transform.position;
+        }
+
+        protected virtual void OnTriggerEnter2D(Collider2D other)
+        {
+            if (LayerManager.IsInLayerMask(other.gameObject.layer, m_obstacleLayer))
+            {
+                SelfDestroy();
+            }
         }
 
         protected virtual void Update()

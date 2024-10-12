@@ -42,6 +42,7 @@ GameObject:
   - component: {fileID: 7982787582839669254}
   - component: {fileID: 4944614495091787718}
   - component: {fileID: 3002687317435730421}
+  - component: {fileID: 4235423301338083005}
   - component: {fileID: 9050721244753311942}
   - component: {fileID: 451517410638914029}
   m_Layer: 6
@@ -128,7 +129,7 @@ MonoBehaviour:
   m_obstacleLayerMask:
     serializedVersion: 2
     m_Bits: 384
-  m_rayLength: 0.5
+  m_rayLength: 0.2
   m_horizontalRayNumber: 4
   m_verticalRayNumber: 4
   m_velocity: {x: 0, y: 0}
@@ -142,6 +143,21 @@ MonoBehaviour:
     BottomCollide: 0
     LeftCollide: 0
     RightCollide: 0
+--- !u!114 &4235423301338083005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7964414115432280897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b27559a9d90c944db2b0905a8e342be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_maxHealth: 3
+  m_currentHealth: 3
+  m_healthEvent: {fileID: 11400000, guid: aff11646a91803f43acf1281048c948f, type: 2}
 --- !u!114 &9050721244753311942
 MonoBehaviour:
   m_ObjectHideFlags: 0
