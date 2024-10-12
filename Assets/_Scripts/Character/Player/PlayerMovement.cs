@@ -73,7 +73,7 @@ namespace SGGames.Scripts.Character
 
         private void UpdateMovement()
         {
-            transform.Translate(m_moveDirection * (Time.deltaTime * m_movementSpeed));
+            m_characterController.SetVelocity(m_moveDirection * (Time.deltaTime * m_movementSpeed));
         }
 
         protected override void UpdateAnimator()

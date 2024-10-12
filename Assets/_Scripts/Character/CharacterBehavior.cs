@@ -8,7 +8,7 @@ namespace SGGames.Scripts.Character
     public class CharacterBehavior : MonoBehaviour
     {
         [SerializeField] protected bool m_isAllow;
-
+        protected CharacterController m_characterController;
         public virtual void ToggleAllow(bool value)
         {
             m_isAllow = value;
@@ -17,6 +17,7 @@ namespace SGGames.Scripts.Character
         protected virtual void Start()
         {
             m_isAllow = true;
+            m_characterController = GetComponent<CharacterController>();
         }
 
         protected virtual void Update()
